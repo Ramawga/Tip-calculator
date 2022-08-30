@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora de gorjeta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    
+</head>
+<body>
+
+    <div class="box">
+        <div class="valores">
+            <div class="conta">
+                <p>Conta</p>
+                <input class="total-conta" id="total-conta" type="number">
+                <i class="fa-solid fa-brazilian-real-sign"></i>
+            </div><!--conta-->
+            <div class="gorjetas">
+                <p>Gorjeta %</p>
+                <button class="gorjeta " >5%</button>
+                <button class="gorjeta " >10%</button>
+                <button class="gorjeta  ativado" >15%</button>
+                <button class="gorjeta " >25%</button>
+                <button class="gorjeta " >50%</button>
+                <input class="taxa-percentual" id="taxa-percentual" placeholder="Custom" type="number">
+            </div><!--gorjetas-->
+            <div class="pessoas">
+                <p >Numero de Pessoas</p>
+                <span class="error">error</span>
+                <input class="numero-pessoas" type="number">
+                <i class="fa-solid fa-user"></i>
+            </div><!--pessoas-->
+        </div><!--valores-->
+
+        <div class="resultados">
+            <div class="valor-gorjeta">
+                <div class="wrap">
+                    <h1>Valor da Gorjeta</h1>
+                    <h2>/pessoa</h2>
+                </div><!--wrap-->
+                <div class="valor-resultado-gorjeta">
+                    <p id="gorjeta-por-cabeca"></p>
+                </div><!--valor-resultado-gorjeta-->
+            </div><!--valor-gorjeta-->
+            <div class="total-gorjeta">
+                <div class="wrap">
+                    <h1>Total</h1>
+                    <h2>/pessoa</h2>
+                </div><!--wrap-->
+                <div class="total-resultado-gorjeta">
+                    <p id="total-gorjeta-por-cabeca"></p>
+                </div><!--total-resultado-gorjeta-->
+            </div><!--total-gorjeta-->
+            
+            <button class="reiniciar">Reiniciar</button>
+        </div><!--resultados-->
+    </div><!--box-->
+    <script src="https://kit.fontawesome.com/1e467e3d5c.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
